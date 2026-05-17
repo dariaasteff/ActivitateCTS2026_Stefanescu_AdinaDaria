@@ -1,0 +1,28 @@
+package ro.ase.cts.clase;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Operator {
+    private List<Command> listaComenzi;
+
+    public Operator() {
+        listaComenzi=new ArrayList<>();
+    }
+
+    public void adaugaComanda(Command command)
+    {
+        listaComenzi.add(command);
+    }
+
+    public void executaComanda()
+    {
+        if(listaComenzi.size()>0)
+        {
+            listaComenzi.removeFirst().executa();
+        }
+        else {
+            System.out.println("Lista de comenzi e goala");
+        }
+    }
+}
