@@ -9,7 +9,7 @@ public class Autobuz implements IAutobuzCopie{
         this.sofer = sofer;
     }
 
-    public Autobuz() {
+    private Autobuz() {
     }
 
     @Override
